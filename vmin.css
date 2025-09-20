@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.square{
+    width: 50vmin;
+    height: 50vmin;
+    background-color: lightblue;
+}

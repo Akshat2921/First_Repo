@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="Basic.css">
+</head>
+<body class="bg-black text-white font-sans">
+    <nav class="navbar flex items-center justify-between px-10 py-5 bg-[#111] sticky top-0 z-50">
+        
+        <div class="nav-left flex items-center gap-6">
+            <img src="https://ik.imagekit.io/sheryians/light-logo_lNzGXRRlQ.png" alt="" class="h-9">
+            <h3 class="brand text-xl font-semibold cursor-pointer">Coding School</h3>
+        </div>
+        <ul class="nav-links hidden md:flex gap-3 list-none absolute md:static top-16 right-0 flex-col md:flex-row bg-[#111] md:bg-transparent p-5 md:p-0 shadow-md md:shadow-none">
+            <li><a href="#" class="text-gray-300 text-lg hover:text-cyan-400 hover:scale-105 transition">Home</a></li>
+            <li><a href="#" class="text-gray-300 text-lg hover:text-cyan-400 hover:scale-105 transition">Courses</a></li>
+            <li><a href="#" class="text-gray-300 text-lg hover:text-cyan-400 hover:scale-105 transition">Cohort</a></li>
+            <li><a href="#" class="text-gray-300 text-lg hover:text-cyan-400 hover:scale-105 transition">Request Callback</a></li>
+            <li><a href="#" class="text-gray-300 text-lg hover:text-cyan-400 hover:scale-105 transition">Classroom</a></li>
+          </ul>
+
+          <button class="menu-btn md:hidden text-2xl text-white">☰</button>
+    </nav>
+
+    <script>
+        const menuBtn=document.querySelector(".menu-btn");
+        const navLinks=document.querySelector(".nav-links");
+
+        menuBtn.addEventListener("click",()=>{
+            navLinks.classList.toggle("hidden");
+            navLinks.classList.toggle("flex");
+        });
+    </script>
+</body>
+</html>

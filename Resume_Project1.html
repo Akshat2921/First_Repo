@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="Resume_Project1.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <!-- Left: Logo + Brand -->
+      <div class="nav-1">
+        <img
+          src="https://ik.imagekit.io/sheryians/light-logo_lNzGXRRlQ.png"
+          alt="Logo"
+        />
+        <h4>Coding School</h4>
+      </div>
+
+      <!-- Right: Links + Profile -->
+      <div class="nav-2">
+        <div class="nav-links">
+          <h4>Home</h4>
+          <h4>Courses</h4>
+          <h4>Cohort</h4>
+          <h4>Request Callback</h4>
+          <h4>Classroom</h4>
+        </div>
+        <!-- 🔔 Bell Icon -->
+        <i class="ri-notification-3-line bell-icon"></i>
+
+        <!-- Menu Icon (Mobile) -->
+        <i class="ri-menu-line menu-icon"></i>
+        <!-- 📞 Phone icon (only for mobile) -->
+        <i class="ri-phone-line phone-icon"></i>
+
+        <!-- Profile -->
+        <img src="4ae53d6b-87d5-4e73-8f6d-81dbceaf1485.jpg" alt="Profile" />
+      </div>
+    </nav>
+    <main>
+      <section class="section-1">
+        <div class="left">
+          <h1>
+            Job Ready AI Powered Cohort: <br />Complete Web Development +
+            <br />DSA+Gen-AI +Aptitude
+          </h1>
+          <div class="tags">
+            <h4>MERN Stack</h4>
+            <h4>DSA with JS</h4>
+            <h4>AI Powered</h4>
+            <h4>Placement Focused</h4>
+            <h4>Aptitude & Reasoning</h4>
+          </div>
+          <h3>Price <span>₹ 5999</span> <span>₹ 11999</span> (+GST)</h3>
+          <h5>Scratch Card in the End!</h5>
+          <div>
+            <button>Buy Now</button>
+            <button>View Syllabus</button>
+          </div>
+          <h6>
+            Batch Starts on <span>2<sup>nd</sup> October</span>
+          </h6>
+        </div>
+        <div class="right">
+          <div class="right-in">
+            <div class="image">
+              <img src="a8c5d415-c031-4c86-b957-786cce638fc7.png" alt="" />
+              <div class="play-btn">
+                <i class="ri-play-fill"></i>
+              </div>
+            </div>
+            <div class="image-bottom">
+              <h4>Language <span>Hinglish</span></h4>
+              <h4>Certificate <span>Yes</span></h4>
+              <h4>Schedule <span>Mon-Sat</span>(8:30 PM)</h4>
+              <h4>Total Content <span>250+</span></h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Mobile Sticky Bottom Bar -->
+      <div class="mobile-sticky-bar">
+        <button class="buy-btn">Buy Now</button>
+        <button class="callback-btn">
+          <i class="ri-phone-line"></i> Get Callback
+        </button>
+      </div>
+
+      <div class="section-2">
+        <h1>Get Placed</h1>
+        <h2>Job Ready AI Powered Cohort</h2>
+        
+        <!-- New Centered Image -->
+        <div class="section-2-image">
+          <img src="https://ik.imagekit.io/sheryians/Cohort%202.0/Group%2076(1)_G8t15l3CHb.png?updatedAt=1754552905662" alt="Cohort Banner" />
+        </div>
+      </div>
+           
+    </main>
+    <script>
+      const navbar = document.querySelector("nav");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+      const menuIcon = document.querySelector(".menu-icon");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuIcon.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
